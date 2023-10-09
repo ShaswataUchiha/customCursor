@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+.cursor{
+    position: fixed;
+    mix-blend-mode: difference;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease;
+    pointer-events: none;
+}
+
+.effect{
+    font-size: 10vw;
+    font-weight: 900;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+}
